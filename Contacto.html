@@ -52,30 +52,38 @@
             color: #92a4ff;
         }
 
-        div.gallery {
-            margin: 5px;
-            border: 1px solid #ccc;
-            float: left;
-            width: 33vw;
-        }
-
-        div.gallery:hover {
-            border: 1px solid #777;
-        }
-
-        div.gallery img {
+        input[type=text],
+        input[type=email],
+        textarea,
+        select {
             width: 100%;
-            height: auto;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
         }
 
-        div.desc {
-            padding: 15px;
-            text-align: center;
+        input[type=submit] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
         }
 
-        .centrado {
-            display: flex;
-            justify-content: center;
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        div.contenedor-formulario {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
         }
         .footer {
             background-color: #333;
@@ -93,41 +101,40 @@
             <ul>
                 <li> <a href="index.html">Inicio</a>  </li>
                 <li> <a href="preferencias.html">Preferencias</a>  </li>
-                <li> <a class= "active" href="audiovisuales.html">Audiovisuales</a>  </li>
+                <li> <a href="audiovisuales.html">Audiovisuales</a>  </li>
                 <li> <a href="Contacto.html">Contacto</a>  </li>
+
             </ul>
             </nav>
             
-            <main>
-                <h2> Bienvenidos a la página de Simon</h2>
-                <p> Bienvenidos al trabajo de proyecto integrador</p>
-                <video class="centrado" src="asset/Video de WhatsApp 2025-05-10 a las 16.08.34_9d275b3d.mp4" autoplay muted></video>
-<audio src="asset/JENNIE - twin (Official Lyric Video).mp3" autoplay></audio>
-                
-<section class="centrado">
-    <div class="gallery">
-
-    
-                <img class="image2" src= "asset/Imagen de WhatsApp 2025-05-08 a las 14.14.44_7a70c305.jpg">
-    <div> Simon 1</div>
-    </div>
-    <div class="gallery">
-                <img class="image" src="asset/Imagen de WhatsApp 2025-05-10 a las 16.05.30_988763bf.jpg">
-                <div> Simon 2</div>
-</div>
-<div class="gallery">
-                <img class="image"src="asset/Imagen de WhatsApp 2025-05-03 a las 15.45.40_11bc154f.jpg">
-                <div> Simon 3</div>
-                </div>
-            
-            </div>
-
-</section>
-              
-                
-            </main>
+           
  </header>
+ <div>
+    <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text"id="nombre" placeholder="Escribi aqui tu nombre" required>
+        <label for="apellido">Apellido:</label>
+        <input type="text"id="apellido" placeholder="Escribi aqui tu Apellido"required>
+         <label for="email">Email:</label>
+        <input type="text"id="email" placeholder="Escribi aqui tu Email">
+        <label for="Pais">Pais:</label>
+        <select name="Pais" id="pais">
+            <option> value="Chile"> Chile</option>
+            <option> value="Peru"> Peru</option>
+            <option> value="Paraguay"> Paraguay</option>
+            <option> value="Brasil"> Brasil</option>
+        </select>
+        <label for="comentario">Comentario:</label>
+        <textarea name="comentario" id="comentario"placeholder="Escribi aqui tu comentario"></textarea>
+    </form>
+ </div>
+
         
-   <footer class="footer">
+   <footer>
   <p> © 2025 Mi Sitio Web </p>
 </footer>
+
+
+
+
+</html>
